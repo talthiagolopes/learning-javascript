@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Strings</title>
+    </head>
+    <body>
+        <p class="newsletter-text"></p>
+        <script type="text/javascript">
+
+            // concat
+            console.log('Hello ' + 'Boy' )
+
+            // template literals
+            const name = 'Name'
+            console.log('Hello ' + name + ' Bla')
+            console.log(`Hello ${name} Bla`)
+
+            //typeof
+            console.log(typeof name)
+
+            // .length
+            console.log(name.length)
+
+            // .includes()
+            console.log(name.includes('Na'))
+            console.log(name.includes('Hehe'))
+
+            // .slice(start, end)
+            console.log(name.slice(1,3))
+
+            // .replace ('text1', 'for text2')
+            console.log(name.replace(name, 'Name2'))
+
+            // .trim()
+            const text = '   hahahaha   ';
+            console.log(text)
+            console.log(text.trim())
+
+            // .split(',')
+            const geolocation = 'Street  name,number,region';
+            console.log(geolocation.split(','))
+
+            //Exercise 1
+            const NAME = 'Name';
+            const GAME = 'Game';
+            const DISCOUNT = 20;
+            const NEWSLETTER = `Hola ${NAME}, wellcome with us! We have a ${DISCOUNT}% of discount for you
+            to by the new game of the moment ${GAME}.
+            We want that you like it!
+            Regards s2`
+            document.querySelector('.newsletter-text').innerHTML = NEWSLETTER
+        </script>
+    </body>
+</html>

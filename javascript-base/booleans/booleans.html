@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Booleans</title>
+    </head>
+    <body>
+        <p class="user-text"></p>
+        <script type="text/javascript">
+            console.log(Boolean(1))
+            console.log(Boolean('bla'))
+            console.log(Boolean(3.12))
+            console.log(Boolean(100 > 5))
+            console.log(Boolean(1 < 100))
+            console.log(Boolean('1'== 1))
+
+            console.log(Boolean('1' === 1))
+
+            console.log(Boolean(0))
+            console.log(Boolean(-0))
+            console.log(Boolean(''))
+            console.log(Boolean(NaN))
+            console.log(Boolean(null))
+            console.log(Boolean(undefined))
+
+            // Exercise
+            const USER_LOGGED = true;
+            const USER_TEXT = document.querySelector('.user-text')
+
+            if (USER_LOGGED) {
+                USER_TEXT.innerHTML = 'Click here!'
+            }
+            else {
+                USER_TEXT.innerHTML = 'You need to login!'
+            }
+
+        </script>
+    </body>
+</html>

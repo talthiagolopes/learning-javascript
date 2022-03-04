@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Functions</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+           function sayMyName() {
+               console.log('My name is Name! =)')
+           }
+
+           function sum(a, b) {
+               console.log(a + b)
+           }
+
+           function sayMyNameWithParam(name = 'NAME') {
+                console.log(`My name is ${name}`)
+           }
+
+           function sayMyNameWithReturn(name = 'NAME RETURN') {
+               return `My name is ${name}`
+           }
+
+           var sayMyNamePlease = function(name = "Anonymous return") {
+                return `My name is ${name}`
+           }
+
+           var sayMayNameSimple = (name) => `My name is ${name}`
+           
+           var sayBye = (name) => {
+               return `Bye ${name}`
+           }
+
+           sayMyName()
+           sum(2,5)
+           sum(3,9)
+           sayMyNameWithParam()
+           sayMyNameWithParam('LOPES')
+           console.log(sayMyNameWithReturn())
+           console.log(sayMyNameWithReturn('LOPES RETURN'))
+           console.log(sayMyNamePlease())
+           console.log(sayMyNamePlease('ANONYMOUS RETURN'))
+           console.log(sayMayNameSimple('Simple'))
+           console.log(sayBye('Simple'))
+        </script>
+    </body>
+</html>

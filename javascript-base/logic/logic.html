@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Logic</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+         const FLYGHT = 100;
+         const HOTEL = 50;
+         const TOUR = 30;
+         const TOTAL = FLYGHT + HOTEL + TOUR;
+         const BUDGET = 300;
+
+         const RESULT_MESSAGE = BUDGET > TOTAL ?  console.log('Sure.. I`m going to travel!') : console.log('Of course NOT.. I don`t have money to travel!')
+
+
+         if (BUDGET > TOTAL) {
+             console.log('Sure.. I`m going to travel!')
+         }
+         else if (BUDGET == TOTAL) {
+             console.log('Sure.. I`m going to travel but I don`t have much money!')
+         }
+         else {
+             console.log('Of course NOT.. I don`t have money to travel!')
+         }
+
+        </script>
+    </body>
+</html>
